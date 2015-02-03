@@ -13,7 +13,7 @@ def index(request):
     # products = shopify.Product.find(limit=3)
     # orders = shopify.Order.find(limit=3, order="created_at DESC")
     pages = shopify.Page.find()
-    out = dir(pages)
+    out = dir(pages[0])
     return render_to_response('home/index.html', {
         # 'products': products,
         # 'orders': orders,

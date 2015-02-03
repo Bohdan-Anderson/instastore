@@ -49,6 +49,12 @@
   </p>
 </div>
 
+
+
+
+
+
+
 <div>
   <h2>pages</h2>
   {{pages}}
@@ -60,9 +66,14 @@
 </div>
 
 {% for sec in out %}
-  <h3>{{sec}}</h3>
+  <h4>{{sec}}</h4>
 {% endfor %}
 
+
+
+
+
+{# 
 <div id="orders">
   <h2>Your recent orders</h2>
   {% if orders %}
@@ -107,5 +118,5 @@
 {% empty %}
   <em class="note">There are no products in your store.</em>
 {% endfor %}
-
+ #}
 {% endblock %}
