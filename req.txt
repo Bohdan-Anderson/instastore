@@ -1,0 +1,7 @@
+Django==1.6
+PyYAML==3.11
+ShopifyAPI==2.1.0
+pyactiveresource==2.1.0
+python-dateutil==2.4.0
+six==1.9.0
+wsgiref==0.1.2
