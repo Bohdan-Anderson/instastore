@@ -10,8 +10,8 @@ def welcome(request):
 
 @shop_login_required
 def index(request):
-    products = shopify.Product.find(limit=3)
-    orders = shopify.Order.find(limit=3, order="created_at DESC")
+    # products = shopify.Product.find(limit=3)
+    # orders = shopify.Order.find(limit=3, order="created_at DESC")
     pages = shopify.Page.find()
     return render_to_response('home/index.html', {
         'products': products,
