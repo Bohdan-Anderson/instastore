@@ -14,6 +14,12 @@ def index(request):
     # orders = shopify.Order.find(limit=3, order="created_at DESC")
     pages = shopify.Page.find()
     out = dir(pages[0])
+
+    for page in pages:
+        if page.title == "instagram":
+            page.body_html = "This is from the app";
+            page.save()
+
     return render_to_response('home/index.html', {
         # 'products': products,
         # 'orders': orders,
