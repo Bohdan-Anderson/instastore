@@ -14,9 +14,9 @@ def index(request):
     # orders = shopify.Order.find(limit=3, order="created_at DESC")
     pages = shopify.Page.find()
     return render_to_response('home/index.html', {
-        'products': products,
-        'orders': orders,
-        'pages':pages
+        # 'products': products,
+        # 'orders': orders,
+        'pages':pages,
     }, context_instance=RequestContext(request))
 
 def design(request):
