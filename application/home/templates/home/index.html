@@ -59,6 +59,10 @@
   {% endfor %}
 </div>
 
+{% for sec in out %}
+  <h3>{{sec}}</h3>
+{% endfor %}
+
 <div id="orders">
   <h2>Your recent orders</h2>
   {% if orders %}

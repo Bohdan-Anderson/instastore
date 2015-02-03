@@ -13,10 +13,12 @@ def index(request):
     # products = shopify.Product.find(limit=3)
     # orders = shopify.Order.find(limit=3, order="created_at DESC")
     pages = shopify.Page.find()
+    out = dir(pages)
     return render_to_response('home/index.html', {
         # 'products': products,
         # 'orders': orders,
         'pages':pages,
+        'out':out
     }, context_instance=RequestContext(request))
 
 def design(request):
