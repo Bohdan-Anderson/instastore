@@ -32,6 +32,7 @@ def finalize(request):
     shop_url = request.REQUEST.get('shop')
     try:
         shopify_session = shopify.Session(shop_url)
+        print shopify_session.request_token(request.REQUEST)
         request.session['shopify'] = {
             "shop_url": shop_url,
             "access_token": shopify_session.request_token(request.REQUEST)
