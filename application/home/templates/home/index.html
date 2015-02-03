@@ -54,7 +54,8 @@
   {{pages}}
   <br>
   {% for page in pages %}
-    {{page}} <br>
+    <h3>{{page.title}}</h3>
+    {{page.body_html}} <br>
   {% endfor %}
 </div>
 
